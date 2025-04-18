@@ -6,9 +6,12 @@ class File2qr < Formula
   license "GPL-3.0-or-later"
 
   def install
-    # Install the binary with the correct name
-    bin.install "file2qr-1.0.0/file2qr-darwin-amd64" => "file2qr"
-    man1.install "file2qr-1.0.0/file2qr.1"
+    # More robust installation that finds the binary regardless of subdirectory
+    binary = Dir["**/file2qr-darwin-amd64"].first
+    bin.install binary => "file2qr"
+    
+    man_page = Dir["**/file2qr.1"].first
+    man1.install man_page if man_page
   end
 
   test do
