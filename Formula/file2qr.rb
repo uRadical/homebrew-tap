@@ -4,14 +4,11 @@ class File2qr < Formula
   url "https://github.com/uRadical/file2qr/releases/download/v1.0.0/file2qr-1.0.0-macos.tar.gz"
   sha256 "a35ccb59df8f98190b403a191c75c3295ef1103ea64945308f5a890530efba31"
   license "GPL-3.0-or-later"
-  
-  # Remove the Go dependency since we're using a pre-built binary
-  # depends_on "go" => :build  
 
   def install
-    # Instead of building from source, just copy the binary to the right location
-    bin.install "file2qr"
-    man1.install "file2qr.1"
+    # Install the binary with the correct name
+    bin.install "file2qr-1.0.0/file2qr-darwin-amd64" => "file2qr"
+    man1.install "file2qr-1.0.0/file2qr.1"
   end
 
   test do
