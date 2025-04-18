@@ -1,8 +1,8 @@
 class File2qr < Formula
   desc "Convert files to QR codes"
   homepage "https://github.com/uradical/file2qr"
-  url "https://github.com/uRadical/file2qr/releases/download/v1.0.0/file2qr-1.0.0-macos.tar.gz"
-  sha256 "a35ccb59df8f98190b403a191c75c3295ef1103ea64945308f5a890530efba31"
+  url "https://github.com/uRadical/file2qr/releases/download/v1.0.1/file2qr-1.0.1-macos.tar.gz"
+  sha256 "7fa587a67601de3f6f9bfb1f966c498ef7175118c15ada94c03d75e03a7f7201"
   license "GPL-3.0-or-later"
 
   def install
