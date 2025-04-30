@@ -9,7 +9,7 @@ class Mov2mp4 < Formula
   depends_on "ffmpeg"
   
   def install
-    bin.install "mov2mp4"
+    bin.install "bin/mov2mp4"
   end
   
   test do
