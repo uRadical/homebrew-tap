@@ -19,7 +19,7 @@ class GameUpdater < Formula
   end
 
   resource "openpyxl" do
-    url "https://files.pythonhosted.org/packages/42/08/832c82e91a3e1adf1f1559778c86917b6a6a2be1998b996caff355b4a4ee/openpyxl-3.1.2.tar.gz"
+    url "https://files.pythonhosted.org/packages/42/e8/af028681d493814ca9c2ff8106fc62a4a32e4e0ae14602c2a98fc7b741c8/openpyxl-3.1.2.tar.gz"
     sha256 "a6f5977418eff3b2d5500d54d9db50c8277a368436f4e4f8ddb1be3422870184"
   end
 
