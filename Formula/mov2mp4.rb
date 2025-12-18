@@ -1,4 +1,6 @@
-class Mov2mp4 < Formula                                                                                                                                                                                                      
+ require "download_strategy"                                                                                                                                                                                                  
+                                                                                                                                                                                                                               
+  class Mov2mp4 < Formula                                                                                                                                                                                                      
     desc "Command-line tool for converting MOV video files to MP4 format"                                                                                                                                                      
     homepage "https://github.com/uRadical/mov2mp4"                                                                                                                                                                             
     url "https://github.com/uRadical/mov2mp4/releases/download/v1.2.0/mov2mp4-1.2.0.tar.gz",                                                                                                                                   
@@ -15,4 +17,4 @@ class Mov2mp4 < Formula
     test do                                                                                                                                                                                                                    
       system "#{bin}/mov2mp4", "-h"                                                                                                                                                                                            
     end                                                                                                                                                                                                                        
-  end 
+  end
