@@ -1,8 +1,8 @@
 class Mov2mp4 < Formula
   desc "Command-line tool for converting MOV video files to MP4 format"
   homepage "https://github.com/uradical/mov2mp4"
-  url "https://github.com/uRadical/mov2mp4/releases/download/v1.0.1/mov2mp4-1.0.1.tar.gz"
-  sha256 "8e0caf8ace3277d6ed7a2715de8f970717def1ce2d7f9a9498822a2f501c46d0"
+  url "https://github.com/uRadical/mov2mp4/releases/download/v1.2.0/mov2mp4-1.2.0.tar.gz"
+  sha256 "e6a34c997881f65f04b7fe1c51750161d9186dba1b0e35f35e3fc530539a8a46"
   license "GPL-3.0"
   
   # Specify FFmpeg as a dependency
