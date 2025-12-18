@@ -1,18 +1,18 @@
-class Mov2mp4 < Formula
-  desc "Command-line tool for converting MOV video files to MP4 format"
-  homepage "https://github.com/uradical/mov2mp4"
-  url "https://github.com/uRadical/mov2mp4/releases/download/v1.2.0/mov2mp4-1.2.0.tar.gz"
-  sha256 "e6a34c997881f65f04b7fe1c51750161d9186dba1b0e35f35e3fc530539a8a46"
-  license "GPL-3.0"
-  
-  # Specify FFmpeg as a dependency
-  depends_on "ffmpeg"
-  
-  def install
-    bin.install "bin/mov2mp4"
-  end
-  
-  test do
-    system "#{bin}/mov2mp4", "-h"
-  end
-end
+class Mov2mp4 < Formula                                                                                                                                                                                                      
+    desc "Command-line tool for converting MOV video files to MP4 format"                                                                                                                                                      
+    homepage "https://github.com/uRadical/mov2mp4"                                                                                                                                                                             
+    url "https://github.com/uRadical/mov2mp4/releases/download/v1.2.0/mov2mp4-1.2.0.tar.gz"                                                                                                                                    
+    sha256 "e6a34c997881f65f04b7fe1c51750161d9186dba1b0e35f35e3fc530539a8a46"                                                                                                                                                  
+    license "GPL-3.0-only"  # More specific SPDX identifier                                                                                                                                                                    
+                                                                                                                                                                                                                               
+    depends_on "ffmpeg"                                                                                                                                                                                                        
+                                                                                                                                                                                                                               
+    def install                                                                                                                                                                                                                
+      bin.install "bin/mov2mp4"                                                                                                                                                                                                
+    end                                                                                                                                                                                                                        
+                                                                                                                                                                                                                               
+    test do                                                                                                                                                                                                                    
+      # Check that help works                                                                                                                                                                                                  
+      assert_match "Convert MOV files to MP4", shell_output("#{bin}/mov2mp4 -h")                                                                                                                                               
+    end                                                                                                                                                                                                                        
+  end               
