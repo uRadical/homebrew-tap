@@ -5,21 +5,21 @@
 class UradicalCard < Formula
   desc "Generate branded social media cards with custom title and photo"
   homepage "https://github.com/uRadical/uradical-card"
-  version "1.1.1"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.1/uradical-card_1.1.1_darwin_amd64.tar.gz"
-      sha256 "757a8f7884aba4363872c21a00c6989c1f099cc7db61aab4417cd54321b6916b"
+      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.2/uradical-card_1.1.2_darwin_amd64.tar.gz"
+      sha256 "412602e179c1ad53061fe6d3efedceb905a640366537ab3ca46e81726aefbaba"
 
       def install
         bin.install "uradical-card"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.1/uradical-card_1.1.1_darwin_arm64.tar.gz"
-      sha256 "6d146137b7d77636a4883b00ef692219b8f6e75139a78a5ae8338e7b3ce2df54"
+      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.2/uradical-card_1.1.2_darwin_arm64.tar.gz"
+      sha256 "2030fa16e0ac5fa00de92ef755dec34f07193a8a41d92f49b8df21e3b98b19f5"
 
       def install
         bin.install "uradical-card"
@@ -29,15 +29,15 @@ class UradicalCard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.1/uradical-card_1.1.1_linux_amd64.tar.gz"
-      sha256 "9a5ca8302f4cd54a2e238fef6f92c7973ec0b3102a9241ff3107d1e613442ab8"
+      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.2/uradical-card_1.1.2_linux_amd64.tar.gz"
+      sha256 "44824572a6d8666d54deefeafe7d7c322f9bd434962a39bc2a5e3e812896074f"
       def install
         bin.install "uradical-card"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.1/uradical-card_1.1.1_linux_arm64.tar.gz"
-      sha256 "9cfec684e94815e6477139329e91615f85e5ecea9b3134638426a7ae8405c249"
+      url "https://github.com/uRadical/uradical-card/releases/download/v1.1.2/uradical-card_1.1.2_linux_arm64.tar.gz"
+      sha256 "545ff7932227bae37cc3fb45fa4741831c7ba9de0d1eb9d19f6fe42a7b355330"
       def install
         bin.install "uradical-card"
       end
